@@ -1,0 +1,108 @@
+<ion-app>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+  </head>
+  <ion-header class="header">
+    <!-- <ion-navbar class="navbar"> -->
+      <ion-title>
+       <ion-icon src="assets/bell.svg" class="bell">
+        </ion-icon>
+        <div class="ion-text-right">
+          <img src="assets/logo.svg" class="logo">
+        </div>
+      </ion-title>
+    <!-- </ion-navbar> -->
+  </ion-header>
+  <ion-content overflow-scroll="true">
+    <div class="container">
+      <h1 class="ion-text-center">  Contract Ending </h1>
+
+      <ion-tab-bar class="menu-bar">
+          <button type="button" class="btn btn-secondary" (click)="contract()"> Contract </button>
+          <div class="divider"></div>
+          <button type="button" class="btn btn-three" (click)="month()" >Cur Month Expiring </button>
+          <div class="divider"></div>
+          <button type="button" class="btn btn-primary" (click)="expired()"> Expired </button>
+        </ion-tab-bar>
+      <div class="flex-container">
+      <!-- <div class="rectangle"> -->
+
+        <ion-card class="card">
+        <div class="square">
+        <ion-text class="complain">  Client : Imtiaz Hamza  </ion-text>
+        <br>
+        <ion-text  class="h3">  Lifts Number : 6  <br> </ion-text>
+        <ion-text class="h3">  Contract Price: 23300 Riyal <br>  </ion-text>
+       </div>
+
+       <ion-badge class="tool">
+        <ion-text class="date"> Contract end Date: Sunday, 23-03-2020<br></ion-text>
+      </ion-badge>
+
+      </ion-card>
+
+      <ion-card class="card">
+        <div class="square">
+        <ion-text class="complain">  Client : Javaid Ahmad  </ion-text>
+        <br>
+        <ion-text  class="h3">  Lifts Number : 6  <br> </ion-text>
+        <ion-text class="h3">  Contract Price: 23300 Riyal <br>  </ion-text>
+       </div>
+
+       <ion-badge class="tool">
+        <ion-text class="date"> Contract end Date: Sunday, 23-03-2020<br></ion-text>
+      </ion-badge>
+
+      </ion-card>
+
+      
+  </div>
+
+  </div>
+
+  <div class="ion-text-center">
+    <button type="button" class="back" (click)="home()">Back</button>
+  </div>
+
+  </ion-content>
+
+  <!--footer-->
+
+  <ion-tab-bar class="bottom">
+
+    <ion-tab-button tab="home">
+      <ion-icon src="assets/profile.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-icon src="assets/message.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" class="fab-button" click="home()">
+    <ion-fab-button>
+      <ion-icon src="assets/home-icon.svg"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-icon src="assets/settings.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-icon src="assets/questionmark.svg"></ion-icon>
+  </ion-tab-button>
+
+  </ion-tab-bar>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed"  style="background-color: #194E78; margin-bottom: 7px; border-radius: 30px;"  (click)="home()">
+  <ion-fab-button class="fab-button">
+    <ion-icon name="home"></ion-icon>
+  </ion-fab-button>
+  </ion-fab>
+
+  </ion-app>
+

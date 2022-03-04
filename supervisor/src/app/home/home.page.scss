@@ -1,0 +1,114 @@
+.flex-container {
+  justify-content: center;
+  display: flex;
+  margin-top: 1.8em;
+}
+.header{
+  height: 40px;
+background-color: #194E78;
+}
+.bell{
+margin-left: 0.5em;
+position: absolute;
+top: 5px;
+left: 0.5em;
+width: 24px;
+height: 30px;
+}
+.logo{
+  position: relative ;
+  top: -40px;
+  right: 0px;
+  width: 66px;
+  height: 86px;
+  justify-content: center;
+}
+.white{
+  width: 100%;
+  height: 2em;
+}
+
+.carousel-indicators{
+border-radius: 0px;
+}
+
+.carousel-item{
+  height: 9em;
+  text-align: center;
+
+}
+.ion-text-title{
+  margin-top: 1.4em;
+  text-align: center !important;
+}
+.ion-text-top{
+  margin-top: 3.2em;
+  text-align: center !important;
+}
+.ion-text-center{
+  margin-top: 1.5em;
+}
+
+.card{
+  width: 143px;
+  height: 69px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 8%;
+}
+.card-img-top{
+  width: 43px;
+  height: 43px;
+  margin-top: -1.3em;
+}
+.card-title{
+  margin-top: -1.75em;
+  color: #194E78;
+  font-weight:bold;
+  font-size: 28px;
+}
+.h6{
+
+  font-size: 13px;
+  color: #194E78;
+  font-weight:bold;
+  margin-top: -1.8em;
+  margin-bottom: 0.2em;
+
+}
+
+//footer code
+.white{
+  width: 100%;
+  height: 1.5em;
+}
+
+ion-tab-bar, ion-tab-button{
+    background-color: #194E78;
+
+   }
+
+.footer{
+  position: sticky;
+}
+   ion-icon{
+     color: white;
+     font-size: 30px;
+   }
+  .fab-button{
+    --background:#194E78;
+  }
+
+//logo
+
+
+
+  .logo{
+    position: relative ;
+    top: -40px;
+    right: 0px;
+    width: 66px;
+    height: 86px;
+    justify-content: center;
+  }
+
+

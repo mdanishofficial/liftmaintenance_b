@@ -1,0 +1,159 @@
+<ion-app>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+  </head>
+  <ion-header class="header">
+    <!-- <ion-navbar class="navbar"> -->
+      <ion-title>
+        <ion-icon src="assets/bell.svg" class="bell">
+        </ion-icon>
+        <div class="ion-text-right">
+          <img src="assets/logo.svg" class="logo">
+        </div>
+      </ion-title>
+    <!-- </ion-navbar> -->
+  </ion-header>
+  <ion-content overflow-scroll="true">
+    <div class="container">
+      <h1 class="ion-text-center" > Repair Technicians </h1>
+      <div class="tabs">
+
+        <ion-card>
+        <ion-item>
+          <ion-label>
+            <h2>Manager Name: Waseem Ullah </h2>
+            <p> Maintenance Repair Technician</p>
+         </ion-label>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>
+<h2> Location: Dubai </h2>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="flex-container">
+        <div class="card">
+          <div class="ion-text-top">
+            <h2 class="card-title">07</h2>
+        </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+
+            <h6 class="h6"> Malfunction Assigned </h6>
+          </div>
+          </div>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div class="card">
+          <div class="ion-text-top">
+            <h2 class="card-title">01</h2>
+        </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+            <h6 class="h6"> Pending Malfunction</h6>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div class="card">
+          <div class="ion-text-top">
+            <h2 class="card-title">02</h2>
+        </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+
+            <h6 class="h6"> Solved Complain</h6>
+          </div>
+          </div>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div class="card">
+          <div class="ion-text-top">
+            <h2 class="card-title">03</h2>
+        </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+            <h6 class="h6"> Unsolved Complain </h6>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div class="card">
+          <div class="ion-text-top">
+            <h2 class="card-title">04</h2>
+        </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+
+            <h6 class="h6"> Updated Cash Bills</h6>
+          </div>
+          </div>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div class="card">
+          <div class="ion-text-top">
+            <h2 class="card-title">05</h2>
+        </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+            <h6 class="h6"> Updated POS Bills </h6>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!--card code ending-->
+      </div>
+      </div>
+
+    </ion-content>
+  <!--footer-->
+
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="home">
+        <ion-icon src="assets/profile.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+    <ion-icon src="assets/message.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed" class="fab-button" click="home()">
+      <ion-fab-button>
+        <ion-icon src="assets/home-icon.svg"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+    <ion-icon src="assets/settings.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+    <ion-icon src="assets/questionmark.svg"></ion-icon>
+  </ion-tab-button>
+
+  </ion-tab-bar>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed"  style="background-color: #194E78; margin-bottom: 7px; border-radius: 30px;"  (click)="home()">
+    <ion-fab-button class="fab-button">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  </ion-app>

@@ -1,0 +1,95 @@
+<ion-app>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+  </head>
+  <ion-header class="header">
+    <!-- <ion-navbar class="navbar"> -->
+      <ion-title>
+       <ion-icon src="assets/bell.svg" class="bell">
+        </ion-icon>
+        <div class="ion-text-right">
+          <img src="assets/logo.svg" class="logo">
+        </div>
+      </ion-title>
+    <!-- </ion-navbar> -->
+  </ion-header>
+  <ion-content overflow-scroll="true">
+    <div class="container">
+      <h1 class="ion-text-center">  Total Bills </h1>
+
+      <div class="flex-container">
+      <!-- <div class="rectangle"> -->
+        <ion-card class="card">
+<ion-text class="h3"> Bill # TD24153  </ion-text>
+<ion-text class="date"> Sunday, 23-03-2020 <br> </ion-text>
+<ion-text class=" h3"> Client Name: Shahnawaz <br> </ion-text>
+<ion-text class="h3"> Amount: 3667 Riyal  <br> </ion-text>
+<ion-text class="h3"> Status: Pending </ion-text>
+
+</ion-card>
+
+<ion-card class="card">
+  <ion-text class="h3"> Bill # TD24153 </ion-text>
+  <ion-text class="date"> Sunday, 23-03-2020 <br> </ion-text>
+  <ion-text class=" h3"> Client Name: Shahnawaz <br> </ion-text>
+  <ion-text class="h3"> Amount: 3667 Riyal  <br> </ion-text>
+  <ion-text class="h3"> Status: Paid </ion-text>
+
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-text class="h3"> Bill # TD24153 </ion-text>
+    <ion-text class="date"> Sunday, 23-03-2020  <br> </ion-text>
+    <ion-text class=" h3"> Client Name: Shahnawaz <br> </ion-text>
+    <ion-text class="h3"> Amount: 3667 Riyal  <br> </ion-text>
+    <ion-text class="h3"> Status: Confirmation Pending </ion-text>
+
+    </ion-card>
+  <!-- </div> -->
+
+
+  </div>
+
+  </div>
+  </ion-content>
+
+  <!--footer-->
+
+  <ion-tab-bar class="bottom">
+
+    <ion-tab-button tab="home">
+      <ion-icon src="assets/profile.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-icon src="assets/message.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" class="fab-button" click="home()">
+    <ion-fab-button>
+      <ion-icon src="assets/home-icon.svg"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-icon src="assets/settings.svg"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button tab="home">
+  <ion-icon src="assets/questionmark.svg"></ion-icon>
+  </ion-tab-button>
+
+  </ion-tab-bar>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed"  style="background-color: #194E78; margin-bottom: 7px; border-radius: 30px;"  (click)="home()">
+  <ion-fab-button class="fab-button">
+    <ion-icon name="home"></ion-icon>
+  </ion-fab-button>
+  </ion-fab>
+
+  </ion-app>
+

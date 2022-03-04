@@ -1,0 +1,7 @@
+{
+  "name": "supervisor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
