@@ -15,91 +15,100 @@
       </ion-title>
     <!-- </ion-navbar> -->
   </ion-header>
+
   <div class="white"></div>
-<ion-content [fullscreen]="true">
 
-   <div class="flex-container">
-    <div class="card" (click)="managers()">
-      <div class="ion-text-top">
-        <h1 class="card-title">157</h1>
-    </div>
-      <div class="card-body">
-        <div class="ion-text-title">
+  <ion-content overflow-scroll="true">
 
-        <h6 class="h6">Total Visits</h6>
-      </div>
-      </div>
-    </div>
-    &nbsp;
-    &nbsp;
-    <div class="card" (click)="installationlist()">
-      <div class="ion-text-top">
-        <h1 class="card-title">139</h1>
-    </div>
-      <div class="card-body">
-        <div class="ion-text-title">
-        <h6 class="h6"> Previous Visits </h6>
-      </div>
-      </div>
-    </div>
-  </div>
+    <div class="flex-container">
+      <div class="card" (click)="totalinstallation()">
+        <div class="ion-text-top">
+              <h2 class="text"> 157</h2>
+          </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+                  <h6 class="card-title">Total Visit</h6>
+              </div>
+          </div>
 
+        </div>
+
+        &nbsp;
+      &nbsp;
+
+      <div class="card" (click)="todayinstallation()">
+        <div class="ion-text-top">
+              <h2 class="text"> 139</h2>
+          </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+                  <h6 class="card-title">Previous Visit</h6>
+              </div>
+          </div>
+      </div>
+      </div>
   <div class="flex-container">
-    <div class="card" (click)="billmanagers()">
-      <div class="ion-text-top">
-        <h1 class="card-title">02</h1>
-    </div>
-      <div class="card-body">
-        <div class="ion-text-title">
-        <h6 class="h6"> Visits Detail </h6>
+      <div class="card" (click)="installationDetail()">
+        <div class="ion-text-top">
+              <img class="card-img-top" src="../../assets/report.svg" alt="Card image cap">
+          </div> 
+          <div class="card-body">
+            <div class="ion-text-title">
+                  <h6 class="card-title">Visit Details</h6>
+              </div>
+          </div>
       </div>
+      &nbsp;
+      &nbsp;
+      <div class="card" (click)="assignedInstallation()">
+        <div class="ion-text-top">
+              <img class="card-img-top" src="../../assets/assignment.svg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+                  <h6 class="card-title">Assigned Visit</h6>
+              </div>
+          </div>
       </div>
-    </div>
-    &nbsp;
-    &nbsp;
-    <div class="card" (click)="mtechnicians()">
-      <div class="ion-text-top">
-        <h1 class="card-title">07</h1>
-    </div>
-      <div class="card-body">
-        <div class="ion-text-title">
-        <h6 class="h6"> Assigned Visits</h6>
-      </div>
-      </div>
-    </div>
   </div>
   <div class="flex-container">
-    <div class="card" (click)="repairtechnicians()">
-      <div class="ion-text-top">
-        <h1 class="card-title">04</h1>
-    </div>
-      <div class="card-body">
-        <div class="ion-text-title">
-        <h6 class="h6"> Visit Report</h6>
+      <div class="card" (click)="malfunctions()">
+        <div class="ion-text-top">
+              <img class="card-img-top" src="../../assets/hazard-sign.svg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+                  <h6 class="card-title">Visit Report</h6>
+              </div>
+          </div>
       </div>
+      &nbsp;
+      &nbsp;
+      <div class="card" (click)="bills()">
+        <div class="ion-text-top">
+              <img class="card-img-top" src="../../assets/bill.svg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <div class="ion-text-title">
+                  <h6 class="card-title">Previous Visit </h6>
+              </div>
+          </div>
       </div>
-    </div>
-    &nbsp;
-    &nbsp;
-    <div class="card" (click)="installtechnicians()">
-      <div class="ion-text-top">
-        <h1 class="card-title">03</h1>
-    </div>
-      <div class="card-body">
-        <div class="ion-text-title">
-        <h6 class="h6"> Previous Visits</h6>
-      </div>
-      </div>
-    </div>
-
-
   </div>
-  <!--new -->
+<h1 class="tittle">Today's Installation</h1>
 
-  <div class="white"> </div>
+
+<ion-card class="detail" *ngFor="let result of  installation_data">
+  <ion-card-title class="details">Installation # {{result?.Installation_id}} </ion-card-title>
+  <ion-card-subtitle class="sub-details">Client Name : {{result?.Client_Name}}</ion-card-subtitle>
+  <ion-card-subtitle class="sub-details">Location : {{result?.Client_Location}}</ion-card-subtitle>
+</ion-card>
+
+
 
 </ion-content>
 
+<div class="white"> </div>
 <!--footer-->
 
 <ion-tab-bar slot="bottom">

@@ -1,4 +1,7 @@
-.flex-container {
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+
+.flex-container{
   justify-content: center;
   display: flex;
   margin-top: 1.8em;
@@ -8,78 +11,92 @@
 background-color: #194E78;
 }
 .bell{
-margin-left: 0.5em;
+margin-left: 0.25em;
 position: absolute;
 top: 5px;
-left: 0.5em;
+left: 0.25em;
 width: 24px;
 height: 30px;
 }
+
 .logo{
   position: relative ;
-  top: -40px;
+  top: -10px;
   right: 0px;
-  width: 66px;
-  height: 86px;
+  width: 60px;
+  height: 80px;
   justify-content: center;
 }
-.white{
-  width: 100%;
-  height: 2em;
-}
 
-.carousel-indicators{
-border-radius: 0px;
-}
 
-.carousel-item{
-  height: 9em;
-  text-align: center;
-
-}
-.ion-text-title{
-  margin-top: 1.4em;
-  text-align: center !important;
-}
-.ion-text-top{
-  margin-top: 3.5em;
-  text-align: center !important;
-}
 .ion-text-center{
   margin-top: 1.5em;
+
 }
 
+ .text{
+font-weight:bold;
+font-family: Roboto;
+margin-bottom:  0.1em;
+color:#194E78 ;
+font-size:30px;
+}
+
+.white{
+    width: 100%;
+    height: 6em;
+}
+
+.ion-text-center{
+    margin-top: 0.1em;
+}
 .card{
   width: 143px;
-  height: 69px;
+  height: 75px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   border-radius: 8%;
 }
 .card-img-top{
   width: 43px;
   height: 43px;
-  margin-top: -1.3em;
+  margin-top: 0.2em;
+  font-weight: bold;
 }
 .card-title{
-  margin-top: -1.75em;
+  margin-top: -0.6em;
   color: #194E78;
-  font-weight:bold;
-  font-size: 28px;
-}
-.h6{
-
-  font-size: 13px;
-  color: #194E78;
-  font-weight:bold;
-  margin-top: -1.8em;
-  margin-bottom: 0.2em;
-
+  font-weight: 500;
+  font-size:15px;
+  font-family: Roboto;
 }
 
-//footer code
+.tittle{
+    color: #194E78;
+    font-family:Roboto ;
+    text-align: center;
+    margin-top:30px ;
+    font-size:30px;
+    font-weight: 800;
+}
+
+.detail{
+     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.details{
+    margin: 10px;
+color: #194E78;
+font-family: Roboto;
+font-size: 25px;
+font-weight: 700;
+}
+.sub-details{
+     margin: 5px 5px 5px 15px;
+font-family: Roboto;
+
+}
 .white{
   width: 100%;
-  height: 1.5em;
+  height: 1.1em;
 }
 
 ion-tab-bar, ion-tab-button{
@@ -98,17 +115,13 @@ ion-tab-bar, ion-tab-button{
     --background:#194E78;
   }
 
-//logo
 
-
-
-  .logo{
-    position: relative ;
-    top: -40px;
-    right: 0px;
-    width: 66px;
-    height: 86px;
-    justify-content: center;
+  .ion-text-top{
+    margin-top: -0.7em;
+    text-align: center !important;
   }
 
-
+  .ion-text-title{
+  margin-top: 1.2em;
+  text-align: center !important;
+}

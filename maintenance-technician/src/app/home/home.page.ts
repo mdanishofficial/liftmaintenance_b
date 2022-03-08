@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 @Component({
@@ -9,45 +11,54 @@ export class HomePage {
 
 
   constructor(private router: Router) {}
-  home(){
-    this.router.navigateByUrl('home');
+
+  totalinstallation() {
+    console.log('inside Installation');
+  this.router.navigateByUrl('totalinstallation');
   }
-  managers(){
-    this.router.navigateByUrl('managerslist');
+
+  todayinstallation() {
+    console.log('inside Installation');
+    this.router.navigateByUrl('todayinstallation');
   }
-  installationlist(){
-    this.router.navigateByUrl('installation-managers-list');
+
+  installationDetail() {
+    console.log('inside Installation');
+    this.router.navigateByUrl('installationdetails');
   }
-  billmanagers(){
-    this.router.navigateByUrl('billmanagers');
+  assignedInstallation() {
+    console.log('inside Installation');
+    this.router.navigateByUrl('assignedinstallation');
   }
-  mtechnicians(){
-    this.router.navigateByUrl('maintenance-technicians');
+
+  malfunctions() {
+    console.log('inside Installation');
+    this.router.navigateByUrl('newmalfunction');
   }
-  repairtechnicians(){
-    this.router.navigateByUrl('repair-technicians');
+
+  bills() {
+    console.log('inside Installation');
+    this.router.navigateByUrl('unpaid-bill');
   }
-  installtechnicians(){
-    this.router.navigateByUrl('installation-technicians');
-  }
-  totalMalfunctions(){
-    this.router.navigateByUrl('total-malfunctions');
-  }
-  complains(){
-    this.router.navigateByUrl('solved-complains');
-  }
-  installations(){
-    this.router.navigateByUrl('total-installations');
-  }
-  bills(){
-    this.router.navigateByUrl('total-bills');
-  }
-  contracts(){
-    this.router.navigateByUrl('total-contracts');
-  }
-  clients(){
-    this.router.navigateByUrl('total-clients');
-  }
+
+  installation_data = [
+    { Installation_id:'1',
+      Client_Name: 'Naeem Arshad',
+      Client_Location: 'Abu Dhabi',
+    },
+    {
+      Installation_id: '2',
+      Client_Name : 'Naeem Arshad',
+      Client_Location: 'Abu Dhabi',
+    },
+{
+      Installation_id: '3',
+      Client_Name: 'Naeem Arshad',
+      Client_Location : 'Abu Dhabi',
+    }
+
+  ];
+
 }
 
 
