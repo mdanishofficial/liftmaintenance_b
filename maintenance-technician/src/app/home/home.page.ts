@@ -12,47 +12,41 @@ export class HomePage {
 
   constructor(private router: Router) {}
 
-  totalinstallation() {
-    console.log('inside Installation');
-  this.router.navigateByUrl('totalinstallation');
+  totalVisits() {
+  this.router.navigateByUrl('visit-details');
   }
 
-  todayinstallation() {
-    console.log('inside Installation');
-    this.router.navigateByUrl('todayinstallation');
+  todayVisits() {
+    this.router.navigateByUrl('visit-details');
   }
 
-  installationDetail() {
-    console.log('inside Installation');
-    this.router.navigateByUrl('installationdetails');
+  upcomingVisits() {
+    this.router.navigateByUrl('upcoming-visits');
   }
-  assignedInstallation() {
-    console.log('inside Installation');
-    this.router.navigateByUrl('assignedinstallation');
+  previousVisits() {
+    this.router.navigateByUrl('previous-visits');
   }
 
-  malfunctions() {
-    console.log('inside Installation');
-    this.router.navigateByUrl('newmalfunction');
+  visitReport() {
+    this.router.navigateByUrl('visit-details');
   }
 
-  bills() {
-    console.log('inside Installation');
-    this.router.navigateByUrl('unpaid-bill');
+  preVisits() {
+    this.router.navigateByUrl('details-of-visit');
   }
 
   installation_data = [
-    { Installation_id:'1',
+    { Installation_id:'01',
       Client_Name: 'Naeem Arshad',
       Client_Location: 'Abu Dhabi',
     },
     {
-      Installation_id: '2',
+      Installation_id: '02',
       Client_Name : 'Naeem Arshad',
       Client_Location: 'Abu Dhabi',
     },
 {
-      Installation_id: '3',
+      Installation_id: '03',
       Client_Name: 'Naeem Arshad',
       Client_Location : 'Abu Dhabi',
     }

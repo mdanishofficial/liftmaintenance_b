@@ -21,7 +21,7 @@
   <ion-content overflow-scroll="true">
 
     <div class="flex-container">
-      <div class="card" (click)="totalinstallation()">
+      <div class="card" (click)="totalVisits()">
         <div class="ion-text-top">
               <h2 class="text"> 157</h2>
           </div>
@@ -36,7 +36,7 @@
         &nbsp;
       &nbsp;
 
-      <div class="card" (click)="todayinstallation()">
+      <div class="card" (click)="previousVisits()">
         <div class="ion-text-top">
               <h2 class="text"> 139</h2>
           </div>
@@ -48,10 +48,10 @@
       </div>
       </div>
   <div class="flex-container">
-      <div class="card" (click)="installationDetail()">
+      <div class="card" (click)=" totalVisits()">
         <div class="ion-text-top">
               <img class="card-img-top" src="../../assets/report.svg" alt="Card image cap">
-          </div> 
+          </div>
           <div class="card-body">
             <div class="ion-text-title">
                   <h6 class="card-title">Visit Details</h6>
@@ -60,7 +60,7 @@
       </div>
       &nbsp;
       &nbsp;
-      <div class="card" (click)="assignedInstallation()">
+      <div class="card" (click)=" totalVisits()">
         <div class="ion-text-top">
               <img class="card-img-top" src="../../assets/assignment.svg" alt="Card image cap">
           </div>
@@ -72,9 +72,9 @@
       </div>
   </div>
   <div class="flex-container">
-      <div class="card" (click)="malfunctions()">
+      <div class="card" (click)="visitReport()">
         <div class="ion-text-top">
-              <img class="card-img-top" src="../../assets/hazard-sign.svg" alt="Card image cap">
+              <img class="card-img-top" src="../../assets/details.svg" alt="Card image cap">
           </div>
           <div class="card-body">
             <div class="ion-text-title">
@@ -84,9 +84,9 @@
       </div>
       &nbsp;
       &nbsp;
-      <div class="card" (click)="bills()">
+      <div class="card" (click)="preVisits()">
         <div class="ion-text-top">
-              <img class="card-img-top" src="../../assets/bill.svg" alt="Card image cap">
+              <img class="card-img-top" src="../../assets/previous.svg" alt="Card image cap">
           </div>
           <div class="card-body">
             <div class="ion-text-title">
@@ -95,16 +95,17 @@
           </div>
       </div>
   </div>
-<h1 class="tittle">Today's Installation</h1>
 
+<h1 class="tittle">Today's Visits</h1>
 
-<ion-card class="detail" *ngFor="let result of  installation_data">
-  <ion-card-title class="details">Installation # {{result?.Installation_id}} </ion-card-title>
-  <ion-card-subtitle class="sub-details">Client Name : {{result?.Client_Name}}</ion-card-subtitle>
-  <ion-card-subtitle class="sub-details">Location : {{result?.Client_Location}}</ion-card-subtitle>
+<ion-card  class="card-design"    *ngFor="let result of  installation_data">
+  <ion-card-title class="sub-detail"> Visit # {{result?.Installation_id}} <br> </ion-card-title>
+  <ion-text class="card-detail">Client Name : {{result?.Client_Name}}  </ion-text>
+  <br>
+  <ion-text class="card-detail"> Location : {{result?.Client_Location}}  <br> </ion-text>
+  <br>
+
 </ion-card>
-
-
 
 </ion-content>
 

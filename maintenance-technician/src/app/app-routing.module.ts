@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'visit-details',
+    loadChildren: () => import('./visit-details/visit-details.module').then( m => m.VisitDetailsPageModule)
+  },
+  {
+    path: 'upcoming-visits',
+    loadChildren: () => import('./upcoming-visits/upcoming-visits.module').then( m => m.UpcomingVisitsPageModule)
+  },
+  {
+    path: 'previous-visits',
+    loadChildren: () => import('./previous-visits/previous-visits.module').then( m => m.PreviousVisitsPageModule)
+  },
+  {
+    path: 'details-of-visit',
+    loadChildren: () => import('./details-of-visit/details-of-visit.module').then( m => m.DetailsOfVisitPageModule)
+  },
 ];
 
 @NgModule({
